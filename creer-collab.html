@@ -121,10 +121,19 @@
       crossorigin="anonymous"></script>
 
       <script>
-
-      function detectError{
+      function detectError(){
         var error = window.location.search;
-        if(error=="?errors")
+        if(error==="?errors")
+        messageError();
       }
+      function messageError(){
+        var inputs = document.getElementById('input');
+        var i;
+        for(var i =0; i<inputs.length;i++){
+
+        }
+      }
+
+
     </body>
     </html>
