@@ -1,123 +1,130 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">LOG</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link" href="#">Collaborateurs</a>
-    <a class="nav-item nav-link" href="#">Statistiques</a>
-    <a class="nav-item nav-link" href="#">Activites</a>
-  </div>
-</div>
-</nav>
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1>Les collaborateurs</h1>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LOG</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Collaborateurs</a>
+      <a class="nav-item nav-link" href="#">Statistiques</a>
+      <a class="nav-item nav-link" href="#">Activites</a>
     </div>
   </div>
-  <form>
-  <div class="form-group">
+  </nav>
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-12">
+        <h1>Nouveau collaborateur</h1>
+      </div>
+    </div>
+    <form>
+    <div class="form-group">
+      <div class="row">
+      <div class="col-3">
+      <label for="nom">Nom</label>
+    </div>
+    <div class="col-4 offset-5">
+      <input type="text" class="form-control" id="nom" placeholder="Nom">
+    </div>
+  </div>
     <div class="row">
     <div class="col-3">
-    <label for="nom">Nom</label>
+    <label for="prenom">Prenom</label>
   </div>
   <div class="col-4 offset-5">
-    <input type="text" class="form-control" id="nom">
+    <input type="text" class="form-control" id="prenom" placeholder="Prenom">
   </div>
-</div>
+  </div>
   <div class="row">
   <div class="col-3">
-  <label for="prenom">Prenom</label>
-</div>
-<div class="col-4 offset-5">
-  <input type="text" class="form-control" id="prenom">
-</div>
-</div>
-<div class="row">
-<div class="col-3">
-<label for="date">Date de naissance</label>
-</div>
-<div class="col-4 offset-5">
-<input type="date" class="form-control" id="date">
-</div>
-</div>
-<div class="row">
-<div class="col-3">
-<label for="adresse">Adresse</label>
-</div>
-<div class="col-4 offset-5">
-<textarea class="form-control" id="adresse" rows="2"></textarea>
-</div>
-</div>
+  <label for="date">Date de naissance</label>
+  </div>
+  <div class="col-4 offset-5">
+  <input type="date" class="form-control" id="date">
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-3">
+  <label for="adresse">Adresse</label>
+  </div>
+  <div class="col-4 offset-5">
+  <textarea class="form-control" id="adresse" rows="2" placeholder="Adresse"></textarea>
+  </div>
+  </div>
 
-<div class="row">
-<div class="col-3">
-<label for="numSecu">Numero de securite sociale</label>
-</div>
-<div class="col-4 offset-5">
-  <input type="text" class="form-control" id="numSecu">
-</div>
-</div>
-<div class="row">
-  <div class="col-7 offset-5">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Créer</button>
-</div>
-</div>
-</form>
-</div>
-</div>
+  <div class="row">
+  <div class="col-3">
+  <label for="numSecu">Numero de securite sociale</label>
+  </div>
+  <div class="col-4 offset-5">
+    <input type="text" class="form-control" id="numSecu" placeholder="Numero de sécurité sociale">
+  </div>
+  </div>
+  <div class="row justify-content-end">
+    <div class="col-7 offset-5">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Créer</button>
+  </div>
+  </div>
+  </form>
+  </div>
+  </div>
 
-<div class="modal fade" id="modal" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Creation d'un collaborateur</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <ul class="list-unstyled">
-          <p>Vous êtes sur le point de créer un nouveau collaborateur :</p>
-            <li>Nom : </li>
-            <li>Prenom : </li>
-            <li>Date de naissance : </li>
-            <li>Adresse : </li>
-            <li>Numero de securite sociale : </li>
-        </ul>
+  <div class="modal fade" id="modal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Creation d'un collaborateur</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-          <button type="button" class="btn btn-primary">Confirmer</button>
+        <div class="modal-body">
+          <ul class="list-unstyled">
+            <p>Vous êtes sur le point de créer un nouveau collaborateur :</p>
+              <li>Nom : </li>
+              <li>Prenom : </li>
+              <li>Date de naissance : </li>
+              <li>Adresse : </li>
+              <li>Numero de securite sociale : </li>
+          </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+            <button type="button" class="btn btn-primary">Confirmer</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  </body>
-  </html>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+
+      <script>
+
+      function detectError{
+        var error = window.location.search;
+        if(error=="?errors")
+      }
+    </body>
+    </html>
